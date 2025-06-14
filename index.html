@@ -4,47 +4,225 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Manuel Daza - CV</title>
+  <meta name="description" content="CV of Juan Manuel Daza in Markdown format, styled with GitHub's markdown CSS.">
+  <meta name="author" content="Juan Manuel Daza">
+  <meta name="keywords" content="CV, resume, markdown, GitHub, CSS, Juan Manuel Daza">
+  <link rel="icon" href="https://onepager.daza.ar/favicon.png" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { background: #f6f8fa; }
-    .markdown-body { box-sizing: border-box; min-width: 320px; max-width: 800px; margin: 40px auto; padding: 40px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
+    :root {
+      --bg: #f6f8fa;
+      --fg: #23232e;
+      --window-bg: #fff;
+      --window-border: #e1e4e8;
+      --body-color: #23232e;
+      --heading: #23232e;
+      --link: #0366d6;
+      --link-hover: #0056b3;
+      --code-bg: #f6f8fa;
+      --blockquote: #6a737d;
+      --blockquote-border: #d1d5da;
+      --table-bg: #fff;
+      --table-border: #e1e4e8;
+      --button-bg: #f6f8fa;
+      --button-fg: #23232e;
+      --button-border: #e1e4e8;
+      --button-hover-bg: #e1e4e8;
+      --button-hover-fg: #23232e;
+    }
     @media (prefers-color-scheme: dark) {
-      body { background: #181a1b !important; }
-      .markdown-body {
-        background: #23272e !important;
-        color: #e6e6e6 !important;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
+      :root {
+        --bg: #2c2c32;
+        --fg: #e6e6e6;
+        --window-bg: #23232e;
+        --window-border: #222226;
+        --body-color: #e6e6e6;
+        --heading: #fff;
+        --link: #8ab4f8;
+        --link-hover: #fff;
+        --code-bg: #181a1b;
+        --blockquote: #b0b0b0;
+        --blockquote-border: #444c56;
+        --table-bg: #23232e;
+        --table-border: #444c56;
+        --button-bg: #23232e;
+        --button-fg: #e6e6e6;
+        --button-border: #444c56;
+        --button-hover-bg: #444c56;
+        --button-hover-fg: #fff;
       }
-      .markdown-body a { color: #8ab4f8 !important; }
-      .markdown-body code, .markdown-body pre {
-        background: #181a1b !important;
-        color: #e6e6e6 !important;
+    }
+    body {
+      background: var(--bg);
+      color: var(--body-color);
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .terminal-window {
+      max-width: 800px;
+      margin: 48px auto;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      overflow: hidden;
+      background: var(--window-bg);
+      border: 1.5px solid var(--window-border);
+    }
+    .terminal-body {
+      background: var(--window-bg);
+      color: var(--body-color);
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+      padding: 32px 32px 40px 32px;
+      min-height: 400px;
+      border-radius: 0 0 8px 8px;
+    }
+    .markdown-body {
+      background: none;
+      color: var(--body-color);
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+      color: var(--heading);
+      font-weight: 700;
+    }
+    .markdown-body a {
+      color: var(--link);
+    }
+    .markdown-body a:hover {
+      color: var(--link-hover);
+    }
+    .markdown-body code, .markdown-body pre {
+      background: var(--code-bg);
+      color: var(--body-color);
+      border-radius: 4px;
+    }
+    .markdown-body blockquote {
+      color: var(--blockquote);
+      border-left: 0.25em solid var(--blockquote-border);
+    }
+    .markdown-body table {
+      background: var(--table-bg);
+    }
+    .markdown-body th, .markdown-body td {
+      border-color: var(--table-border);
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--window-bg);
+      padding: 18px 32px;
+      border-bottom: 1.5px solid var(--window-border);
+      font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .header-nav .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+    }
+    .header-nav .contacts a, .header-nav .contacts span {
+      color: var(--link);
+      text-decoration: none;
+      font-size: 1.35em;
+      transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2px;
+    }
+    .header-nav .contacts a:hover, .header-nav .contacts span:hover {
+      color: var(--link-hover);
+    }
+    .header-nav .contacts .fa-solid, .header-nav .contacts .fa-brands {
+      font-size: 1.25em;
+    }
+    .header-nav .pdf-btn {
+      padding: 8px 20px;
+      font-size: 1em;
+      border-radius: 6px;
+      background: var(--button-bg);
+      color: var(--button-fg);
+      border: 1px solid var(--button-border);
+      cursor: pointer;
+      margin-left: 24px;
+      transition: background 0.2s, color 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-nav .pdf-btn:hover {
+      background: var(--button-hover-bg);
+      color: var(--button-hover-fg);
+    }
+    @media (max-width: 600px) {
+      .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 8px;
       }
-      .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
-        color: #fff !important;
+      .header-nav .contacts {
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
       }
-      .markdown-body blockquote {
-        color: #b0b0b0 !important;
-        border-left: 0.25em solid #444c56 !important;
-      }
-      .markdown-body table {
-        background: #23272e !important;
-      }
-      .markdown-body th, .markdown-body td {
-        border-color: #444c56 !important;
+      .header-nav .pdf-btn {
+        margin-left: 0;
       }
     }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
-  <article id="cv" class="markdown-body"></article>
+  <nav class="header-nav">
+    <div class="contacts">
+      <a href="mailto:juanmanueldaza@gmail.com" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/juanmanueldaza" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/juanmanueldaza" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://gitlab.com/juanmanueldaza" target="_blank" rel="noopener" aria-label="GitLab" title="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+      <a href="https://daza.ar/" target="_blank" rel="noopener" aria-label="Website" title="Website"><i class="fa-solid fa-globe"></i></a>
+    </div>
+    <button id="download-pdf" class="pdf-btn" aria-label="Download PDF" title="Download PDF">
+      <span style="font-weight: 600; letter-spacing: 1px; margin-right: 8px;">PDF</span>
+      <i class="fa-solid fa-arrow-down"></i>
+    </button>
+  </nav>
+  <div class="terminal-window">
+    <article id="cv" class="markdown-body terminal-body"></article>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     fetch('cv.md')
       .then(response => response.text())
       .then(md => {
+        // Remove the contact section from the markdown before rendering
+        const contactRegex = /## Contact[\s\S]*?---/;
+        md = md.replace(contactRegex, '---');
         document.getElementById('cv').innerHTML = marked.parse(md);
       });
+
+    document.getElementById('download-pdf').addEventListener('click', async function() {
+      const element = document.querySelector('.terminal-window');
+      await new Promise(r => setTimeout(r, 100));
+      html2canvas(element, { scale: 2, useCORS: true }).then(canvas => {
+        const imgData = canvas.toDataURL('image/png');
+        const pdf = new jspdf.jsPDF({
+          orientation: 'portrait',
+          unit: 'px',
+          format: [canvas.width, canvas.height]
+        });
+        pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+        pdf.save('daza-cv-2025.pdf');
+      });
+    });
   </script>
 </body>
 </html>

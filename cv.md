@@ -4,12 +4,6 @@ Buenos Aires, Argentina
 
 ---
 
-## Contact
-- **Email:** juanmanueldaza@gmail.com
-- **LinkedIn:** [linkedin.com/in/juanmanueldaza](https://www.linkedin.com/in/juanmanueldaza)
-
----
-
 ## Summary
 Full Stack Web Developer with 5+ years of experience delivering robust, scalable solutions in JavaScript, PHP, Node.js, and Python. Expert in Vue, React, CodeIgniter, Django, and Nest.js. Adept at leading migrations, building user-centric applications, and integrating technology with creative disciplines. Bilingual (Spanish/English).
 
