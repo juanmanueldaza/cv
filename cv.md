@@ -5,7 +5,9 @@ Buenos Aires, Argentina
 ---
 
 ## Summary
-Full Stack Web Developer with 5+ years of experience delivering robust, scalable solutions in JavaScript, PHP, Node.js, and Python. Expert in Vue, React, CodeIgniter, Django, and Nest.js. Adept at leading migrations, building user-centric applications, and integrating technology with creative disciplines. Bilingual (Spanish/English).
+Full Stack Web Developer with 5+ years of experience crafting robust, scalable solutions using JavaScript, PHP, Node.js, and Python. Proficient in modern frameworks including Vue, React, CodeIgniter, Django, and Nest.js.. Known for a creative, user-centric approach, merging technology with artistic disciplines to deliver meaningful digital experiences.
+
+With a background in literature, music journalism, education, and cultural management, I bring a multidisciplinary perspective that enriches my technical work. Bilingual (Spanish/English), lifelong learner, and problem-solver driven by the belief that innovation and art can transform how we connect through technology.
 
 ---
 
