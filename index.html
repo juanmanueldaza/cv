@@ -145,7 +145,7 @@
     });
     navbar.render();
 
-    fetch('cv.md')
+    fetch('https://data.daza.ar/md/cv.md')
       .then(response => response.text())
       .then(md => {
         // Remove the contact section from the markdown before rendering
