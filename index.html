@@ -10,9 +10,12 @@
   <link rel="icon" href="https://onepager.daza.ar/favicon.png" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="canonical" href="https://cv.daza.ar/" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Daza Navbar (remote) -->
+  <link rel="stylesheet" href="https://navbar.daza.ar/navbar.css">
+  <script src="https://navbar.daza.ar/config/navbar-config.js"></script>
+  <script src="https://navbar.daza.ar/navbar.js"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
     :root {
       --bg: #f6f8fa;
       --fg: #23232e;
@@ -110,107 +113,18 @@
     .markdown-body th, .markdown-body td {
       border-color: var(--table-border);
     }
-    .header-nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: var(--window-bg);
-      padding: 18px 32px;
-      border-bottom: 1.5px solid var(--window-border);
-      font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .header-nav .contacts {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      align-items: center;
-    }
-    .header-nav .contacts a, .header-nav .contacts span {
-      color: var(--link);
-      text-decoration: none;
-      font-size: 1.35em;
-      transition: color 0.2s;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 2px;
-    }
-    .header-nav .contacts a:hover, .header-nav .contacts span:hover {
-      color: var(--link-hover);
-    }
-    .header-nav .contacts .fa-solid, .header-nav .contacts .fa-brands {
-      font-size: 1.25em;
-    }
-    .header-nav .pdf-btn {
-      padding: 8px 20px;
-      font-size: 1em;
-      border-radius: 6px;
-      background: var(--button-bg);
-      color: var(--button-fg);
-      border: 1px solid var(--button-border);
-      cursor: pointer;
-      margin-left: 24px;
-      transition: background 0.2s, color 0.2s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .header-nav .pdf-btn:hover {
-      background: var(--button-hover-bg);
-      color: var(--button-hover-fg);
-    }
-    @media (max-width: 600px) {
-      .header-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-        padding: 12px 8px;
-      }
-      .header-nav .contacts {
-        gap: 10px;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .header-nav .pdf-btn {
-        margin-left: 0;
-      }
-    }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
-  <nav class="header-nav">
-    <div class="contacts">
-      <a href="mailto:juanmanueldaza@gmail.com" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/juanmanueldaza" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/juanmanueldaza" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://gitlab.com/juanmanueldaza" target="_blank" rel="noopener" aria-label="GitLab" title="GitLab"><i class="fa-brands fa-gitlab"></i></a>
-      <a href="https://daza.ar/" target="_blank" rel="noopener" aria-label="Website" title="Website"><i class="fa-solid fa-globe"></i></a>
-    </div>
-    <button id="download-pdf" class="pdf-btn" aria-label="Download PDF" title="Download PDF">
-      <span style="font-weight: 600; letter-spacing: 1px; margin-right: 8px;">PDF</span>
-      <i class="fa-solid fa-arrow-down"></i>
-    </button>
-  </nav>
+  <div id="navbar-container"></div>
   <div class="terminal-window">
     <article id="cv" class="markdown-body terminal-body"></article>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script>
-    fetch('cv.md')
-      .then(response => response.text())
-      .then(md => {
-        // Remove the contact section from the markdown before rendering
-        const contactRegex = /## Contact[\s\S]*?---/;
-        md = md.replace(contactRegex, '---');
-        document.getElementById('cv').innerHTML = marked.parse(md);
-      });
-
-    document.getElementById('download-pdf').addEventListener('click', async function() {
+    async function downloadPdf() {
       const element = document.querySelector('.terminal-window');
       await new Promise(r => setTimeout(r, 100));
       html2canvas(element, { scale: 2, useCORS: true }).then(canvas => {
@@ -223,7 +137,22 @@
         pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
         pdf.save('daza-cv-2025.pdf');
       });
+    }
+
+    const navbar = new DazaNavbar({
+      showPdfButton: true,
+      pdfCallback: downloadPdf,
     });
+    navbar.render();
+
+    fetch('cv.md')
+      .then(response => response.text())
+      .then(md => {
+        // Remove the contact section from the markdown before rendering
+        const contactRegex = /## Contact[\s\S]*?---/;
+        md = md.replace(contactRegex, '---');
+        document.getElementById('cv').innerHTML = marked.parse(md);
+      });
   </script>
 </body>
 </html>
