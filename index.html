@@ -18,14 +18,8 @@
             href="https://data.daza.ar/favicon/page.png"
             type="image/png"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css" onerror="this.onerror=null;this.href='github-markdown.min.css'" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onerror="this.onerror=null;this.href='fontawesome.min.css'" />
         <link
             href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap"
             rel="stylesheet"
@@ -139,18 +133,32 @@
             .markdown-body td {
                 border-color: var(--table-border);
             }
+            .skip-link {
+                position: absolute;
+                left: -999px;
+                top: auto;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                z-index: 100;
+            }
         </style>
     </head>
     <body>
-        <div id="navbar-container"></div>
-        <div class="terminal-window">
-            <article id="cv" class="markdown-body terminal-body"></article>
+        <a href="#cv" class="skip-link">Skip to main content</a>
+        <div id="navbar-container" role="navigation" aria-label="Main navigation"></div>
+        <div class="terminal-window" role="main" aria-label="CV content">
+            <article id="cv" class="markdown-body terminal-body" tabindex="0"></article>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.8/dist/purify.min.js" onerror="this.onerror=null;this.src='purify.min.js'"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" onerror="this.onerror=null;this.src='marked.min.js'"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
         <script src="https://navbar.daza.ar/utils/downloadPdf.js"></script>
-        <script>
+        <!-- Load shared mdsite module -->
+        <script type="module">
+            import { fetchAndRenderMarkdown } from "/mdsite.js";
+
             async function downloadPdf() {
                 await DownloadPdfUtil.download({
                     selector: ".terminal-window",
@@ -170,14 +178,16 @@
                 ]
             });
 
-            fetch("https://data.daza.ar/md/cv.md")
-                .then((response) => response.text())
-                .then((md) => {
-                    // Remove the contact section from the markdown before rendering
-                    const contactRegex = /## Contact[\s\S]*?---/;
-                    md = md.replace(contactRegex, "---");
-                    document.getElementById("cv").innerHTML = marked.parse(md);
-                });
+            fetchAndRenderMarkdown({
+                url: "https://data.daza.ar/md/cv.md",
+                targetSelector: "#cv",
+                removeContactSection: true,
+                errorMessage: "Error loading CV"
+            });
         </script>
+        <noscript>
+            <link rel="stylesheet" href="github-markdown.min.css" />
+            <link rel="stylesheet" href="fontawesome.min.css" />
+        </noscript>
     </body>
 </html>
