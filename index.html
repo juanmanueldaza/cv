@@ -1,188 +1,57 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Juan Manuel Daza - CV</title>
-        <meta
-            name="description"
-            content="CV of Juan Manuel Daza in Markdown format, styled with GitHub's markdown CSS."
-        />
-        <meta name="author" content="Juan Manuel Daza" />
-        <meta
-            name="keywords"
-            content="CV, resume, markdown, GitHub, CSS, Juan Manuel Daza"
-        />
-        <link
-            rel="icon"
-            href="https://data.daza.ar/favicon/page.png"
-            type="image/png"
-        />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css" onerror="this.onerror=null;this.href='github-markdown.min.css'" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onerror="this.onerror=null;this.href='fontawesome.min.css'" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Daza Navbar (remote) -->
-        <link rel="stylesheet" href="https://navbar.daza.ar/navbar.css" />
-        <!-- <script src="https://navbar.daza.ar/config/navbar-config.js"></script> -->
-        <script src="https://navbar.daza.ar/navbar.js"></script>
-        <style>
-            :root {
-                --bg: #f6f8fa;
-                --fg: #23232e;
-                --window-bg: #fff;
-                --window-border: #e1e4e8;
-                --body-color: #23232e;
-                --heading: #23232e;
-                --link: #0366d6;
-                --link-hover: #0056b3;
-                --code-bg: #f6f8fa;
-                --blockquote: #6a737d;
-                --blockquote-border: #d1d5da;
-                --table-bg: #fff;
-                --table-border: #e1e4e8;
-                --button-bg: #f6f8fa;
-                --button-fg: #23232e;
-                --button-border: #e1e4e8;
-                --button-hover-bg: #e1e4e8;
-                --button-hover-fg: #23232e;
-            }
-            @media (prefers-color-scheme: dark) {
-                :root {
-                    --bg: #2c2c32;
-                    --fg: #e6e6e6;
-                    --window-bg: #23232e;
-                    --window-border: #222226;
-                    --body-color: #e6e6e6;
-                    --heading: #fff;
-                    --link: #8ab4f8;
-                    --link-hover: #fff;
-                    --code-bg: #181a1b;
-                    --blockquote: #b0b0b0;
-                    --blockquote-border: #444c56;
-                    --table-bg: #23232e;
-                    --table-border: #444c56;
-                    --button-bg: #23232e;
-                    --button-fg: #e6e6e6;
-                    --button-border: #444c56;
-                    --button-hover-bg: #444c56;
-                    --button-hover-fg: #fff;
-                }
-            }
-            body {
-                background: var(--bg);
-                color: var(--body-color);
-                font-family: "Fira Mono", "Consolas", "Menlo", monospace;
-                margin: 0;
-                min-height: 100vh;
-            }
-            .terminal-window {
-                max-width: 800px;
-                margin: 48px auto;
-                border-radius: 8px;
-                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-                overflow: hidden;
-                background: var(--window-bg);
-                border: 1.5px solid var(--window-border);
-            }
-            .terminal-body {
-                background: var(--window-bg);
-                color: var(--body-color);
-                font-family: "Fira Mono", "Consolas", "Menlo", monospace;
-                padding: 32px 32px 40px 32px;
-                min-height: 400px;
-                border-radius: 0 0 8px 8px;
-            }
-            .markdown-body {
-                background: none;
-                color: var(--body-color);
-                box-shadow: none;
-                border-radius: 0;
-            }
-            .markdown-body h1,
-            .markdown-body h2,
-            .markdown-body h3,
-            .markdown-body h4,
-            .markdown-body h5,
-            .markdown-body h6 {
-                color: var(--heading);
-                font-weight: 700;
-            }
-            .markdown-body a {
-                color: var(--link);
-            }
-            .markdown-body a:hover {
-                color: var(--link-hover);
-            }
-            .markdown-body code,
-            .markdown-body pre {
-                background: var(--code-bg);
-                color: var(--body-color);
-                border-radius: 4px;
-            }
-            .markdown-body blockquote {
-                color: var(--blockquote);
-                border-left: 0.25em solid var(--blockquote-border);
-            }
-            .markdown-body table {
-                background: var(--table-bg);
-            }
-            .markdown-body th,
-            .markdown-body td {
-                border-color: var(--table-border);
-            }
-            .skip-link {
-                position: absolute;
-                left: -999px;
-                top: auto;
-                width: 1px;
-                height: 1px;
-                overflow: hidden;
-                z-index: 100;
-            }
-        </style>
-    </head>
-    <body>
-        <a href="#cv" class="skip-link">Skip to main content</a>
-        <div id="navbar-container" role="navigation" aria-label="Main navigation"></div>
-        <div class="terminal-window" role="main" aria-label="CV content">
-            <article id="cv" class="markdown-body terminal-body" tabindex="0"></article>
-        </div>
-        <!-- Load shared mdsite module -->
-        <script type="module">
-            import { fetchAndRenderMarkdown, DownloadPdfUtil } from "https://mdsite.daza.ar/mdsite.js";
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script type="module">
+      import { initMdsite } from 'https://mdsite.daza.ar/mdsite.js';
 
-            async function downloadPdf() {
-                await DownloadPdfUtil.download({
-                    selector: ".terminal-window",
-                    filename: "daza-cv-2025.pdf",
-                });
-            }
+      initMdsite({
+        title: 'CV - Juan Manuel Daza',
+        description:
+          'Complete CV of Juan Manuel Daza - Full Stack Developer, Software Engineer',
+        author: 'Juan Manuel Daza',
+        keywords:
+          'CV, resume, full-stack, developer, engineer, JavaScript, Python',
 
-            window.initDazaNavbar({
-                showPdfButton: true,
-                pdfCallback: downloadPdf,
-                contacts: [
-                    { href: "mailto:juanmanueldaza@gmail.com", icon: "fa-solid fa-envelope", label: "Email" },
-                    { href: "https://www.linkedin.com/in/juanmanueldaza", icon: "fa-brands fa-linkedin", label: "LinkedIn" },
-                    { href: "https://github.com/juanmanueldaza", icon: "fa-brands fa-github", label: "GitHub" },
-                    { href: "https://gitlab.com/juanmanueldaza", icon: "fa-brands fa-gitlab", label: "GitLab" },
-                    { href: "https://daza.ar/", icon: "fa-solid fa-globe", label: "Website" }
-                ]
-            });
+        markdownUrl: 'https://data.daza.ar/md/cv.md',
+        removeContactSection: true,
+        errorMessage: 'Error loading CV',
 
-            fetchAndRenderMarkdown({
-                url: "https://data.daza.ar/md/cv.md",
-                targetSelector: "#cv",
-                removeContactSection: true,
-                errorMessage: "Error loading CV"
-            });
-        </script>
-        <noscript>
-            <link rel="stylesheet" href="github-markdown.min.css" />
-            <link rel="stylesheet" href="fontawesome.min.css" />
-        </noscript>
-    </body>
+        showNavbar: true,
+        showPdfButton: true,
+        pdfFilename: 'juan-manuel-daza-cv-2025.pdf',
+        pdfSelector: '.terminal-window',
+
+        contacts: [
+          {
+            href: 'mailto:juanmanueldaza@gmail.com',
+            icon: 'fa-solid fa-envelope',
+            label: 'Email',
+          },
+          {
+            href: 'https://www.linkedin.com/in/juanmanueldaza',
+            icon: 'fa-brands fa-linkedin',
+            label: 'LinkedIn',
+          },
+          {
+            href: 'https://github.com/juanmanueldaza',
+            icon: 'fa-brands fa-github',
+            label: 'GitHub',
+          },
+          {
+            href: 'https://gitlab.com/juanmanueldaza',
+            icon: 'fa-brands fa-gitlab',
+            label: 'GitLab',
+          },
+          {
+            href: 'https://daza.ar/',
+            icon: 'fa-solid fa-globe',
+            label: 'Website',
+          },
+        ],
+      });
+    </script>
+  </body>
 </html>
