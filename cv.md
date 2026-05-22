@@ -1,7 +1,7 @@
 # Juan Manuel Daza
 **Full Stack AI Engineer | AI LLM Technology Architecture @ Accenture**  
 Buenos Aires, Argentina (EU / Spanish Citizenship)  
-[juanmanueldaza@gmail.com](mailto:juanmanueldaza@gmail.com) | [+54 9 11 ...](tel:+54911) | [daza.ar](https://daza.ar) | [github.com/juanmanueldaza](https://github.com/juanmanueldaza) | [linkedin.com/in/juanmanueldaza](https://linkedin.com/in/juanmanueldaza)
+[juanmanueldaza@gmail.com](mailto:juanmanueldaza@gmail.com) | [+54 9 11 3575-0203](tel:+5491135750203) | [daza.ar](https://daza.ar) | [github.com/juanmanueldaza](https://github.com/juanmanueldaza) | [linkedin.com/in/juanmanueldaza](https://linkedin.com/in/juanmanueldaza)
 
 ---
 
