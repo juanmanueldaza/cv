@@ -1,60 +1,99 @@
 # Juan Manuel Daza
-**Full Stack Web Developer | Bridging Technology, Creativity & Culture**  
-Buenos Aires, Argentina
+**Full Stack AI Engineer | AI LLM Technology Architecture @ Accenture**  
+Buenos Aires, Argentina (EU / Spanish Citizenship)  
+[juanmanueldaza@gmail.com](mailto:juanmanueldaza@gmail.com) | [+54 9 11 ...](tel:+54911) | [daza.ar](https://daza.ar) | [github.com/juanmanueldaza](https://github.com/juanmanueldaza) | [linkedin.com/in/juanmanueldaza](https://linkedin.com/in/juanmanueldaza)
 
 ---
 
-## Summary
-Full Stack Web Developer with 5+ years of experience crafting robust, scalable solutions using JavaScript, PHP, Node.js, and Python. Proficient in modern frameworks including Vue, React, CodeIgniter, Django, and Nest.js.. Known for a creative, user-centric approach, merging technology with artistic disciplines to deliver meaningful digital experiences.
+## Professional Summary
+Highly proactive and strategic **Full Stack AI Engineer** with deep expertise in designing, building, and deploying **Agentic AI systems**, advanced LLM architectures, and robust web applications. Currently an **AI LLM Technology Architecture Senior Analyst at Accenture**, leading the implementation of production-grade AI agents, LangChain/LangGraph systems, and developer experience (DevEx) optimizations.
 
-With a background in literature, music journalism, education, and cultural management, I bring a multidisciplinary perspective that enriches my technical work. Bilingual (Spanish/English), lifelong learner, and problem-solver driven by the belief that innovation and art can transform how we connect through technology.
+*   **EU / Spanish Citizenship**: Eligible for immediate, hassle-free relocation and employment across Spain and the European Economic Area (no visa sponsorship required).
+*   **Engineering Excellence**: Proven track record of managing complex migrations (achieving 4x build-time reductions at Accenture) and microservice standards.
+*   **AI Adoption Leader**: Actively mentored and coached over 160+ developers on integrating GitHub Copilot and generative AI tooling into their daily workflows.
+*   **Multidisciplinary Background**: Combines solid technical depth in TypeScript, Python, Node.js, and modern frameworks with a distinguished former career as a **Journalist & Cultural Publisher** (Clarín, Rolling Stone). This rare background enables unique structured prompt-engineering, highly logical reasoning loops for AI agents, and world-class stakeholder communication.
 
 ---
 
 ## Experience
 
-### Senior Analyst | Accenture Argentina
-**Feb 2025 – Present**
-- Develop and maintain web applications and packaged solutions for enterprise clients.
+### AI LLM Technology Architecture Senior Analyst | Accenture Argentina
+**Feb 2026 – Present | Argentina (Hybrid)**
+*   Design, architect, and deploy purpose-specific **AI agents and multi-agent systems** using **LangGraph, LangChain, and OpenAI/Azure OpenAI APIs** to automate complex corporate workflows.
+*   Optimize reasoning loops, prompt structures, and RAG pipelines, reducing latency and error rates in enterprise AI agents.
+*   Collaborate with global technical leads to define development standards and security guidelines for LLM integration.
 
-### Full Stack Developer | INAMU - Instituto Nacional de la Música
+### Packaged App Development Senior Analyst | Accenture Argentina
+**Feb 2025 – Feb 2026 | Argentina**
+*   Led a critical frontend infrastructure migration from Webpack to **Vite**, achieving a **3x–4x reduction in build and deployment times** and boosting development velocity across the division.
+*   Pioneered organization-wide generative AI adoption by designing and delivering comprehensive **GitHub Copilot knowledge transfer workshops for 160+ colleagues**.
+*   Shifted team workflows from reactive to proactive by integrating automated security scans, dependency updates, and automated code-quality checks directly into sprint cycles.
+
+### Full Stack Developer @INAMU & DW Akademie | Cambá - Laboratorio de Tecnología
 **Jan 2024 – Feb 2025 | Buenos Aires Province, Argentina**
-- Designed, built, and maintained web applications for Argentina’s music community using PHP, CodeIgniter, MySQL, and Docker.
-- Improved user experience and accessibility for thousands of musicians nationwide.
+*   Developed and maintained scalable web features for **INAMU** (Instituto Nacional de la Música) and **DW Akademie** (Colmena Software) using PHP, CodeIgniter, MySQL, and Docker.
+*   Coordinated with open-source software communities and music industry groups to deliver highly accessible, user-centric tools.
 
-### Partner & Full Stack Developer | Cambá - Laboratorio de Tecnología
-**Apr 2023 – Feb 2025 | Greater Buenos Aires**
-- Migrated the AdminSE frontend to Vue.js, reducing load times and enhancing performance.
-- Developed new features for Colmena Software to support local media productions.
+### Frontend Developer @AdminSE | Cambá - Laboratorio de Tecnología
+**Oct 2022 – Jul 2024 | Buenos Aires, Argentina**
+*   Spearheaded the complete frontend modernization of a legacy insurance software to **Vue 3, Pinia, and Axios**, optimizing state management and API communication.
+*   Reconstructed the UI/UX using **PrimeVue**, aligning the enterprise tool with modern responsive standards.
 
-### Past Roles & Freelance Projects
-- **DW Akademie:** Developed new features for Colmena Software.
-- **AdminSE:** Led a successful frontend migration to Vue 3 using modern frameworks.
-- **Teambre9:** Created an MVP for custom sports t-shirt design incorporating 3D elements.
-- **Skydropx:** Implemented solutions using Node.js, TypeScript, and Vue 3.
-- **GPE Sistemas:** Developed web microservices for IoT devices.
-- **Journalism Roles:**
-  - **Copesa (Revista Paula):** Freelance contributor.
-  - **Página 12 (Suplemento NO):** Freelance journalist.
-  - **Grupo Clarín (Suplemento Sí, Suplemento de Espectáculos, Revista Ñ):** Freelance contributor.
-  - **Rolling Stone Argentina:** Journalist, covered shows and conducted interviews.
-  - **Editorial Perfil (Revista Hombre):** Journalist, wrote articles and interviews, assisted in production.
+### Full Stack & Frontend Developer (Freelance & Past Roles)
+**Mar 2021 – Oct 2022 | Various Companies**
+*   **Skydropx**: Built a proof-of-concept HR wiki using Node.js, TypeScript, Vue 3, and Wiki.js, streamlining internal knowledge transfer.
+*   **GPE Sistemas**: Standardized **NestJS** as the main backend framework for microservices and built scalable IoT integrations with LoraWan and Chirpstack.
+*   **Teambre9**: Created an interactive MVP for a custom sports t-shirt design platform using **Three.js** (3D) and JavaScript.
+
+### Journalist, Editor & Cultural Publisher (The Journalism Era)
+**Jan 2006 – Nov 2019 | Buenos Aires, Argentina & Santiago, Chile**
+*   **Music & Culture Journalist**: Contributed high-impact features, show coverages, and artist interviews for leading media outlets including **Diario Clarín (Revista Ñ, Suplemento Sí), Rolling Stone, Página/12, and Editorial Perfil (Revista Hombre)**.
+*   **Founder & Editor @ Editorial CILC**: Established and directed an independent publishing house, overseeing editing, curation, and logistics for 30+ contemporary poetry and literature titles.
+*   **Tour Manager & Press Strategist @ Capitán Cobalto**: Managed public relations, tour logistics, and music festivals (Festival Indiprovi) in Chile and Argentina.
 
 ---
 
 ## Skills
-- **Technical Skills:** Vue.js, React, JavaScript, TypeScript, PHP, Python, Node.js, CodeIgniter, Django, Nest.js, MySQL, Docker, HTML, CSS
-- **Tools & Methodologies:** Git, REST APIs, Webpack, Vite, Pinia, PrimeVue, Axios, Agile, Responsive Design
-- **Problem Solving:** API integration, web scraping, scalable system architecture, performance optimization
-- **Soft Skills:** Communication, teamwork, creative problem-solving, project leadership
-- **Languages:** Spanish (Native), English (Bilingual)
+
+*   **AI & LLMs**: Agentic AI Architectures, Multi-Agent Orchestration, LangChain, LangGraph, Prompt Engineering, Azure OpenAI, RAG, GitHub Copilot Training
+*   **Languages**: JavaScript (ES6+), TypeScript, Python, PHP, Bash, Go (basic)
+*   **Backend & APIs**: Node.js, NestJS, Express.js, Django, FastAPI, CodeIgniter, REST APIs, GraphQL, Microservices, MongoDB, MySQL
+*   **Frontend**: Vue.js (Vue 3, Pinia, Vuex), React.js, Three.js, PrimeVue, HTML5, CSS3, SCSS, Responsive Web Design
+*   **DevOps & Cloud**: Docker, Git, GitHub Actions, GitLab CI, Azure DevOps, Linux (Ubuntu), AWS Lambda
+
+---
+
+## Projects
+
+*   **invencible** | *Creator & Maintainer*
+    Invisible engineering infrastructure for AI agents that brings persistent multi-session memory, machine-readable coding standards (AgentSkills.io standard), and direct Agent-to-Agent (A2A) task delegation to Claude Code and GitHub Copilot CLI via a local shared SQLite/stdio-MCP hub. Implements Spec-Driven Development (SDD) pipelines and "Judgment Day" dual-model adversarial code reviews.
+
+*   **NERV** | *Creator & Architect*
+    An advanced multi-agent orchestration framework acting as Mission Control to coordinate specialized, autonomous subagents (explorers, proposers, designers, planners, verifiers) for automated software engineering workflows, complete with custom slash commands and GitHub integration.
+
+*   **linkedin2md** | *Creator & Maintainer*
+    An open-source, zero-dependency Python CLI tool that parses and transforms raw LinkedIn data exports into clean, structured, LLM-optimized Markdown files for prompt context injection and career intelligence modeling.
 
 ---
 
 ## Education
-- **Acámica:** Full Stack Web Development (2020–2021)
-- **Universidad Nacional de Tres de Febrero:** Digital Arts (Incomplete)
-- **Universidad de Buenos Aires:** Literature (Incomplete)
-- **Tea:** Journalism (2003–2005)
+
+*   **Acámica**: Desarrollador Web Fullstack (2020 – 2021)
+*   **Universidad Nacional de Tres de Febrero**: Licenciado en Artes Electrónicas (Coursework completed, 2019 – 2020)
+*   **Universidad de Buenos Aires**: Licenciado en Letras (Coursework, 2004 – 2010)
+*   **Tea**: Periodista (Degree completed, 2003 – 2005)
 
 ---
+
+## Languages
+
+*   **Spanish**: Native proficiency
+*   **English**: Native or bilingual proficiency (Excellent spoken and written communication)
+
+---
+
+## Recommendations
+
+*   *"Juan quickly builds strong relationships, brings curiosity and creativity to every challenge, and leaves a lasting impact wherever he goes."* — **Nicolás Doallo, Cambá**
+*   *"He played a key role in the complete frontend migration, demonstrating remarkable professional growth."* — **Sebastian Schuartzman, AdminSE**
+*   *"Juan is a proactive cultural leader with an admirable creative drive, equally skilled at enriching projects and narratives."* — **Marysabel Sánchez Bouttó, Publicis Groupe**
