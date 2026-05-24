@@ -1,17 +1,17 @@
 # Juan Manuel Daza
-**Full Stack AI Engineer | AI LLM Technology Architecture @ Accenture**  
-Buenos Aires, Argentina (EU / Spanish Citizenship)  
-[juanmanueldaza@gmail.com](mailto:juanmanueldaza@gmail.com) | [+54 9 11 3575-0203](tel:+5491135750203) | [daza.ar](https://daza.ar) | [github.com/juanmanueldaza](https://github.com/juanmanueldaza) | [linkedin.com/in/juanmanueldaza](https://linkedin.com/in/juanmanueldaza)
+**AI Engineer | Agentic AI, LLMs & LangGraph**  
+📍 Buenos Aires, Argentina · **Relocating to Spain (Oct 2026)** · EU / Spanish Citizenship  
+[juanmanueldaza@gmail.com](mailto:juanmanueldaza@gmail.com) | [daza.ar](https://daza.ar) | [github.com/juanmanueldaza](https://github.com/juanmanueldaza) | [linkedin.com/in/juanmanueldaza](https://linkedin.com/in/juanmanueldaza)
 
 ---
 
 ## Professional Summary
-Highly proactive and strategic **Full Stack AI Engineer** with deep expertise in designing, building, and deploying **Agentic AI systems**, advanced LLM architectures, and robust web applications. Currently an **AI LLM Technology Architecture Senior Analyst at Accenture**, leading the implementation of production-grade AI agents, LangChain/LangGraph systems, and developer experience (DevEx) optimizations.
+**AI Engineer** specialized in **production agentic AI systems**, LLM architectures, and multi-agent orchestration. Currently an **AI LLM Technology Architecture Senior Analyst at Accenture**, designing and deploying purpose-specific AI agents with LangGraph, LangChain, and Azure OpenAI. My edge is unusual: full-stack engineering depth, AI adoption training, and a previous career in journalism and publishing — which taught me how to turn complex systems into language people can trust.
 
-*   **EU / Spanish Citizenship**: Eligible for immediate, hassle-free relocation and employment across Spain and the European Economic Area (no visa sponsorship required).
-*   **Engineering Excellence**: Proven track record of managing complex migrations (achieving 4x build-time reductions at Accenture) and microservice standards.
-*   **AI Adoption Leader**: Actively mentored and coached over 160+ developers on integrating GitHub Copilot and generative AI tooling into their daily workflows.
-*   **Multidisciplinary Background**: Combines solid technical depth in TypeScript, Python, Node.js, and modern frameworks with a distinguished former career as a **Journalist & Cultural Publisher** (Clarín, Rolling Stone). This rare background enables unique structured prompt-engineering, highly logical reasoning loops for AI agents, and world-class stakeholder communication.
+*   **EU / Spanish Citizenship**: Relocating to Spain in October 2026. No visa sponsorship required for Spain or EEA.
+*   **Agentic AI in Production**: Design and deploy multi-agent systems, reasoning loops, RAG pipelines, and Spec-Driven Development workflows at enterprise scale.
+*   **AI Adoption & Training**: Led GitHub Copilot adoption for 160+ engineers. Combine technical depth with journalism-grade communication to bridge AI and human teams.
+*   **Open Source Creator**: Creator of linkedin2md (5k+ PyPI downloads, community contributors), NERV framework, and invencible — all GPL-2.0.
 
 ---
 
@@ -94,6 +94,7 @@ Highly proactive and strategic **Full Stack AI Engineer** with deep expertise in
 
 ## Recommendations
 
+*   *"Juan es un explorador curioso y creativo. Trabajé en conjunto con él en múltiples proyectos durante un par de años intensos de mucho aprendizaje profesional."* — **Jose Luis Di Biase, Director de Tecnología, Cambá**
 *   *"Juan quickly builds strong relationships, brings curiosity and creativity to every challenge, and leaves a lasting impact wherever he goes."* — **Nicolás Doallo, Cambá**
 *   *"He played a key role in the complete frontend migration, demonstrating remarkable professional growth."* — **Sebastian Schuartzman, AdminSE**
 *   *"Juan is a proactive cultural leader with an admirable creative drive, equally skilled at enriching projects and narratives."* — **Marysabel Sánchez Bouttó, Publicis Groupe**
