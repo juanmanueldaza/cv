@@ -1,56 +1,93 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script src="env-config.umd.js"></script>
+    <script src="/_shared/analytics-config.umd.js"></script>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CV - Juan Manuel Daza - Software Engineer and Creative Developer"
+    />
+    <meta name="author" content="Juan Manuel Daza" />
+    <title>CV - Juan Manuel Daza</title>
   </head>
+
   <body>
+    <div id="app">
+      <div id="navbar-container"></div>
+      <main id="content">
+        <h1>Loading...</h1>
+      </main>
+    </div>
+
     <script type="module">
-      import { initMdsite } from 'https://mdsite.daza.ar/mdsite.js';
+      (async () => {
+        try {
+          const { getUrl } = window.DazaEnvConfig;
+          const {
+            fetchAndRenderMarkdown,
+            ensureMdsiteDependencies,
+            initNavbar,
+          } = await import(
+            /* @vite-ignore */ getUrl('https://mdsite.daza.ar/mdsite.js')
+          );
 
-      initMdsite({
-        title: 'CV - Juan Manuel Daza',
-        description:
-          'Complete CV of Juan Manuel Daza - Full Stack Developer, Software Engineer',
-        author: 'Juan Manuel Daza',
-        keywords:
-          'CV, resume, full-stack, developer, engineer, JavaScript, Python',
+          await ensureMdsiteDependencies();
+          await fetchAndRenderMarkdown({
+            url: getUrl('https://data.daza.ar/md/cv.md'),
+            targetSelector: '#content',
+          });
+          await initNavbar({
+            showPdfButton: true,
+            pdfCallbackOptions: {
+              selector: '#content',
+              filename: 'cv-juan-manuel-daza.pdf',
+            },
+          });
+        } catch (error) {
+          console.error('Error loading CV:', error);
+          document.getElementById('content').innerHTML =
+            '<h1>Error loading CV</h1><p>Please check console for details.</p>';
+        }
+      })();
+    </script>
 
-        markdownUrl: 'https://data.daza.ar/md/cv.md',
-        removeContactSection: true,
-        errorMessage: 'Error loading CV',
-
-        showNavbar: true,
-        showPdfButton: true,
-        pdfFilename: 'juan-manuel-daza-cv-2025.pdf',
-        pdfSelector: '.terminal-window',
-
-        contacts: [
-          {
-            href: 'mailto:juanmanueldaza@gmail.com',
-            icon: 'fa-solid fa-envelope',
-            label: 'Email',
-          },
-          {
-            href: 'https://www.linkedin.com/in/juanmanueldaza',
-            icon: 'fa-brands fa-linkedin',
-            label: 'LinkedIn',
-          },
-          {
-            href: 'https://github.com/juanmanueldaza',
-            icon: 'fa-brands fa-github',
-            label: 'GitHub',
-          },
-          {
-            href: 'https://gitlab.com/juanmanueldaza',
-            icon: 'fa-brands fa-gitlab',
-            label: 'GitLab',
-          },
-          {
-            href: 'https://daza.ar/',
-            icon: 'fa-solid fa-globe',
-            label: 'Website',
-          },
-        ],
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" role="dialog" aria-labelledby="cookie-title" hidden
+      style="position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#eee;padding:16px;z-index:99999;font-family:sans-serif;font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;box-shadow:0 -2px 8px rgba(0,0,0,0.3);">
+      <span id="cookie-title">We use analytics cookies to understand how you use this site.</span>
+      <div style="display:flex;gap:8px;flex-shrink:0;">
+        <button id="cookie-accept" style="background:#4CAF50;color:#fff;border:none;padding:8px 16px;cursor:pointer;border-radius:4px;font-size:13px;">Accept</button>
+        <button id="cookie-reject" style="background:#444;color:#fff;border:none;padding:8px 16px;cursor:pointer;border-radius:4px;font-size:13px;">Reject</button>
+      </div>
+    </div>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        var banner = document.getElementById('cookie-banner');
+        var stored = localStorage.getItem('cookie_consent');
+        if (stored === null) { banner.hidden = false; } else { banner.hidden = true; }
+        document.getElementById('cookie-accept').addEventListener('click', function() {
+          localStorage.setItem('cookie_consent', 'granted');
+          banner.hidden = true;
+          if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', {'analytics_storage': 'granted'});
+          }
+        });
+        document.getElementById('cookie-reject').addEventListener('click', function() {
+          localStorage.setItem('cookie_consent', 'denied');
+          banner.hidden = true;
+          if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', {'analytics_storage': 'denied'});
+          }
+        });
+      });
+    </script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        DazaAnalytics.bootstrap('cv');
+        DazaAnalytics.initAutoTrackers();
+        DazaAnalytics.ConsentManager.init();
       });
     </script>
   </body>
