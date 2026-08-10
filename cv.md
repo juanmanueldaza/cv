@@ -6,7 +6,7 @@
 ---
 
 ## Professional Summary
-**AI Engineer** specialized in **production agentic AI systems**, LLM architectures, and multi-agent orchestration. Currently an **AI LLM Technology Architecture Senior Analyst at Accenture**, designing and deploying purpose-specific AI agents with LangGraph, LangChain, and Azure OpenAI. My edge is unusual: full-stack engineering depth, AI adoption training, and a previous career in journalism and publishing — which taught me how to turn complex systems into language people can trust.
+**AI Engineer** specialized in **production agentic AI systems**, LLM architectures, and multi-agent orchestration. Currently an **AI LLM Technology Architecture Senior Analyst at Accenture**, designing and deploying purpose-specific AI agents with LangGraph, LangChain, Claude, Gemini, and Azure OpenAI. I use LangSmith for observability, MCP for agent-to-agent communication, and SSE for streaming AI responses. My edge is unusual: full-stack engineering depth (React, Vue, Angular, TypeScript, Node.js/Fastify), AI adoption training, and a previous career in journalism and publishing — which taught me how to turn complex systems into language people can trust.
 
 *   **EU / Spanish Citizenship**: Relocating to Spain in October 2026. No visa sponsorship required for Spain or EEA.
 *   **Agentic AI in Production**: Design and deploy multi-agent systems, reasoning loops, RAG pipelines, and Spec-Driven Development workflows at enterprise scale.
@@ -19,7 +19,10 @@
 
 ### AI LLM Technology Architecture Senior Analyst | Accenture Argentina
 **Feb 2026 – Present | Argentina (Hybrid)**
-*   Design, architect, and deploy purpose-specific **AI agents and multi-agent systems** using **LangGraph, LangChain, and OpenAI/Azure OpenAI APIs** to automate complex corporate workflows.
+*   Design, architect, and deploy purpose-specific **AI agents and multi-agent systems** using **LangGraph, LangChain, Claude, Gemini, and OpenAI/Azure OpenAI APIs** to automate complex corporate workflows.
+*   Implement **LangSmith** for tracing, debugging, and evaluating agent execution paths, latency, and prompt/chain quality in production agentic systems.
+*   Build **MCP (Model Context Protocol)** servers connecting LLMs to structured tools and data sources for agent-to-agent communication patterns.
+*   Implement **SSE (Server-Sent Events)** for streaming LLM responses and real-time agent state updates from backend to frontend UIs.
 *   Optimize reasoning loops, prompt structures, and RAG pipelines, reducing latency and error rates in enterprise AI agents.
 *   Collaborate with global technical leads to define development standards and security guidelines for LLM integration.
 
@@ -55,11 +58,11 @@
 
 ## Skills
 
-*   **AI & LLMs**: Agentic AI Architectures, Multi-Agent Orchestration, LangChain, LangGraph, Prompt Engineering, Azure OpenAI, RAG, GitHub Copilot Training
+*   **AI & LLMs**: Agentic AI Architectures, Multi-Agent Orchestration, LangChain, LangGraph, Claude (Claude Code), Gemini, Prompt Engineering, Azure OpenAI, RAG, LangSmith (tracing & evaluation), MCP (Model Context Protocol), SSE (Server-Sent Events for streaming AI responses), GitHub Copilot Training
 *   **Languages**: JavaScript (ES6+), TypeScript, Python, PHP, Bash, Go (basic)
-*   **Backend & APIs**: Node.js, NestJS, Express.js, Django, FastAPI, CodeIgniter, REST APIs, GraphQL, Microservices, MongoDB, MySQL
-*   **Frontend**: Vue.js (Vue 3, Pinia, Vuex), React.js, Three.js, PrimeVue, HTML5, CSS3, SCSS, Responsive Web Design
-*   **DevOps & Cloud**: Docker, Git, GitHub Actions, GitLab CI, Azure DevOps, Linux (Ubuntu), AWS Lambda
+*   **Backend & APIs**: Node.js, NestJS, Express.js, Fastify, Django, FastAPI, CodeIgniter, REST APIs, GraphQL, Microservices, MongoDB, MySQL, Snowflake (data warehouse concepts)
+*   **Frontend**: React, Vue.js (Vue 3, Pinia, Vuex), Angular, Three.js, PrimeVue, HTML5, CSS3, SCSS, Responsive Web Design
+*   **DevOps & Cloud**: Docker, Git, GitHub Actions, GitLab CI, Azure DevOps, Azure (Azure OpenAI, cloud services), CI/CD Pipelines (automated testing, dependency scanning, quality gates), Linux (Ubuntu), AWS Lambda
 
 ---
 
